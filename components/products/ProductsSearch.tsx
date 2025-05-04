@@ -32,13 +32,13 @@ export function ProductsSearch() {
       params.set('category', category);
     }
     
-    router.push(`/dashboard/products?${params.toString()}`);
+    router.push(`/products?${params.toString()}`);
   };
   
   const handleReset = () => {
     setSearch('');
     setCategory('');
-    router.push('/dashboard/products');
+    router.push('/products');
   };
   
   return (

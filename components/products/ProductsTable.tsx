@@ -135,7 +135,7 @@ export function ProductsTable() {
               : "You haven't added any products yet. Add one below."}
           </p>
           <Button asChild>
-            <Link href="/dashboard/products/new">Add Product</Link>
+            <Link href="/products/new">Add Product</Link>
           </Button>
         </div>
       </div>
@@ -163,13 +163,13 @@ export function ProductsTable() {
                 <TableCell>
                   <div className="flex items-center gap-2">
                     <Button variant="ghost" size="icon" asChild>
-                      <Link href={`/dashboard/products/${product.id}`}>
+                      <Link href={`/products/${product.id}`}>
                         <ExternalLink className="h-4 w-4" />
                         <span className="sr-only">View product</span>
                       </Link>
                     </Button>
                     <Button variant="ghost" size="icon" asChild>
-                      <Link href={`/dashboard/products/${product.id}/edit`}>
+                      <Link href={`/products/${product.id}/edit`}>
                         <Edit className="h-4 w-4" />
                         <span className="sr-only">Edit product</span>
                       </Link>

@@ -58,7 +58,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Button variant="ghost" size="icon" asChild>
-              <Link href="/dashboard/products">
+              <Link href="/products">
                 <ArrowLeft className="h-4 w-4" />
                 <span className="sr-only">Back to products</span>
               </Link>
@@ -66,7 +66,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <h1 className="text-2xl font-bold tracking-tight">{product.name}</h1>
           </div>
           <Button asChild>
-            <Link href={`/dashboard/products/${params.id}/edit`}>
+            <Link href={`/products/${params.id}/edit`}>
               <Edit className="mr-2 h-4 w-4" />
               Edit Product
             </Link>

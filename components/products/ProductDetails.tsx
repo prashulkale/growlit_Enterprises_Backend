@@ -125,10 +125,10 @@ export function ProductDetails({ product }: ProductDetailsProps) {
           </div>
           
           <div className="flex justify-end">
-            <Button variant="outline">
+            {/* <Button variant="outline">
               <ExternalLink className="mr-2 h-4 w-4" />
               View Documentation
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

@@ -154,10 +154,10 @@ useEffect(() => {
 //   ];
 
   return (
-    <div className="container mx-auto py-10">
-      <Card>
+    <div className="container mx-auto py-2 md:pt-2">
+      {/* <Card> */}
         <CardHeader>
-          <CardTitle>Contact Queries</CardTitle>
+        <h1 className="text-3xl font-bold tracking-tight">Contact Queries</h1>
         </CardHeader>
         <CardContent>
           <Table>
@@ -192,7 +192,7 @@ useEffect(() => {
             <p className="text-center py-4">No contact queries found.</p>
           )}
         </CardContent>
-      </Card>
+      {/* </Card> */}
     </div>
   );
 }

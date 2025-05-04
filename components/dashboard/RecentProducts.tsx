@@ -48,7 +48,7 @@ export function RecentProducts() {
           <div className="flex items-center gap-2">
             <div className="text-sm text-muted-foreground">{product.added}</div>
             <Button variant="ghost" size="icon" asChild>
-              <Link href={`/dashboard/products/${product.id}`}>
+              <Link href={`/products/${product.id}`}>
                 <ExternalLink className="h-4 w-4" />
                 <span className="sr-only">View product</span>
               </Link>
@@ -57,7 +57,7 @@ export function RecentProducts() {
         </div>
       ))}
       <Button variant="outline" className="w-full" asChild>
-        <Link href="/dashboard/products">View all products</Link>
+        <Link href="/products">View all products</Link>
       </Button>
     </div>
   );

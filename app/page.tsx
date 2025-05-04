@@ -2,23 +2,11 @@ import Link from 'next/link';
 import { LogOut, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <header className="border-b bg-background">
-        <div className="container flex h-16 items-center justify-between px-4 sm:px-8">
-          <div className="flex gap-2 font-bold text-xl items-center">
-            <Package className="h-6 w-6" />
-            <span>ProductDB</span>
-          </div>
-          <div className="p-4">
-          <Button variant="outline" className="w-full gap-2">
-            <LogOut className="h-5 w-5" />
-            Logout
-          </Button>
-        </div>
-        </div>
-      </header>
+    <div suppressHydrationWarning className="flex flex-col min-h-screen">
+    
       <main className="flex-1">
         <section className="space-y-6 pb-8 pt-10 md:pb-12 md:pt-12 lg:py-24">
           <div className="container flex flex-col items-center gap-4 text-center">
