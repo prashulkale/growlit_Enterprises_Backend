@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body  className={inter.className}>
+      <body  suppressHydrationWarning className={inter.className}>
 
 
 
@@ -38,7 +38,7 @@ export default function RootLayout({
         >
   
     <ClerkProvider>
-<div  suppressHydrationWarning>
+<div  >
         <Header/>
         
             {children}

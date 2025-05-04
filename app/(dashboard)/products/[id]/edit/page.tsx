@@ -8,10 +8,13 @@ import { Separator } from '@/components/ui/separator';
 import { ProductForm } from '@/components/products/ProductForm';
 import prisma from '@/lib/prisma';
 
+
+
+
+
 interface EditProductPageProps {
-  params: {
-    id: string;
-  };
+  params: { id: string };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 export async function generateMetadata({ params }: EditProductPageProps): Promise<Metadata> {
